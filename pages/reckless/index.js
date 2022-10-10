@@ -1,6 +1,7 @@
 //function for fetch getStaticProps
 import styles from "../../styles/Reckless.module.css";
 import Link from "next/link";
+import Head from "next/head";
 export const getStaticProps = async () => {
   //fetch request
 
@@ -14,17 +15,23 @@ export const getStaticProps = async () => {
 
 const Reckless = ({ reckless }) => {
   return (
-    <div>
-      <h1>Reckless List</h1>
+    <>
+      <Head>
+        <title>TreeShop | Customer</title>
+      </Head>
 
-      {reckless.map((reck) => (
-        <Link href={"/reckless/" + reck.id} key={reck.id}>
-          <a className={styles.single}>
-            <h3>{reck.name}</h3>
-          </a>
-        </Link>
-      ))}
-    </div>
+      <div>
+        <h1>Reckless List</h1>
+
+        {reckless.map((reck) => (
+          <Link href={"/reckless/" + reck.id} key={reck.id}>
+            <a className={styles.single}>
+              <h3>{reck.name}</h3>
+            </a>
+          </Link>
+        ))}
+      </div>
+    </>
   );
 };
 
