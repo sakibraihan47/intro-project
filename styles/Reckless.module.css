@@ -1,11 +1,77 @@
 .single {
-  padding: 2px 16px;
+  padding: 2px;
   background: rgb(0, 0, 0);
-  display: block;
+  display: inline-flex;
   margin: 20px 10px;
   border-left: 8px solid #fff;
   color: #fff;
+  font-size: 16px;
+  width: 300px;
+  height: 60px;
+  justify-content: center;
+  border-radius: 5px;
 }
 .single:hover {
-  border-left: 8px solid #4979ff;
+  border-left: 8px solid #1eff00;
+  background-color: rgb(43, 42, 42);
+}
+
+.price {
+  padding: 2px;
+  background: rgb(255, 255, 255);
+  display: inline-flex;
+  margin: 20px 10px;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  width: 100px;
+  height: 60px;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.count_display {
+  box-sizing: border-box;
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+  padding-top: 2px;
+  width: 50px;
+  display: inline-flex;
+  margin-left: 5px;
+  justify-content: center;
+}
+
+.count_btn {
+  box-sizing: border-box;
+  background-color: rgb(179, 255, 0);
+  color: black;
+  font-size: 16px;
+  padding: 5px;
+  margin-right: 10px;
+  width: 100px;
+  display: inline-flex;
+  text-align: center;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.count_btn_remove {
+  box-sizing: border-box;
+  background-color: rgb(238, 37, 37);
+  color: black;
+  font-size: 16px;
+  padding: 5px;
+  width: 100px;
+  display: inline-flex;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 800;
+  justify-content: center;
+}
+.count_btn:hover {
+  background-color: rgb(176, 252, 208);
+}
+.count_btn_remove:hover {
+  background-color: rgb(252, 176, 176);
 }

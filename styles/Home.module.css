@@ -5,19 +5,10 @@
 }
 .text {
   color: #777;
+
   text-align: justify;
 }
 .btn {
-  display: block;
-  width: 150px;
-  padding: 8px 0;
-  margin: 20px auto;
-  background: #000000;
-  border-radius: 4px;
-  color: rgb(0, 255, 55);
-  text-align: center;
 }
 .btn:hover {
-  background-color: rgb(152, 224, 18);
-  border-radius: 2px;
 }

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { FaShoppingCart } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -7,6 +8,7 @@ const Navbar = () => {
       <div className="logo">
         <Image src="/tree.png" width={60} height={60} />
       </div>
+
       <Link href="/">
         <a>Home</a>
       </Link>
@@ -16,9 +18,13 @@ const Navbar = () => {
       <Link href="/reckless">
         <a>Products List</a>
       </Link>
-      <Link href="">
+      <Link href="/signup">
         <a>Sign Up</a>
       </Link>
+
+      <div className="cart">
+        <FaShoppingCart />
+      </div>
     </nav>
   );
 };

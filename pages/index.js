@@ -11,39 +11,10 @@ export default function Home() {
       <Head>
         <title>TreeShop | Home</title>
       </Head>
+
       <div>
-        <h1 className={styles.title}>TreeShop</h1>
+        <h1 className="styles.">TreeShop</h1>
         <p className={styles.text}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-          dolore necessitatibus omnis natus ex, consequuntur officia ipsa
-          dolores earum, deleniti, corporis ipsum excepturi id debitis
-          cupiditate minima voluptates fugit cumque? Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Placeat dolore necessitatibus omnis
-          natus ex, consequuntur officia ipsa dolores earum, deleniti, corporis
-          ipsum excepturi id debitis cupiditate minima voluptates fugit cumque?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-          dolore necessitatibus omnis natus ex, consequuntur officia ipsa
-          dolores earum, deleniti, corporis ipsum excepturi id debitis
-          cupiditate minima voluptates fugit cumque? Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Placeat dolore necessitatibus omnis
-          natus ex, consequuntur officia ipsa dolores earum, deleniti, corporis
-          ipsum excepturi id debitis cupiditate minima voluptates fugit cumque?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-          dolore necessitatibus omnis natus ex, consequuntur officia ipsa
-          dolores earum, deleniti, corporis ipsum excepturi id debitis
-          cupiditate minima voluptates fugit cumque? Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Placeat dolore necessitatibus omnis
-          natus ex, consequuntur officia ipsa dolores earum, deleniti, corporis
-          ipsum excepturi id debitis cupiditate minima voluptates fugit cumque?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-          dolore necessitatibus omnis natus ex, consequuntur officia ipsa
-          dolores earum, deleniti, corporis ipsum excepturi id debitis
-          cupiditate minima voluptates fugit cumque? Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Placeat dolore necessitatibus omnis
-          natus ex, consequuntur officia ipsa dolores earum, deleniti, corporis
-          ipsum excepturi id debitis cupiditate minima voluptates fugit cumque?
-          <br></br>
-          <br></br>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
           dolore necessitatibus omnis natus ex, consequuntur officia ipsa
           dolores earum, deleniti, corporis ipsum excepturi id debitis
