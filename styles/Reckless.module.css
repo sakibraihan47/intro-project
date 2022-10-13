@@ -93,3 +93,98 @@
   display: block;
   padding: 20px;
 }
+.addtocart {
+  box-sizing: border-box;
+}
+.button {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  width: 50%;
+  cursor: pointer;
+  margin-top: 20px;
+  height: 60px;
+  border-radius: 10px;
+}
+.button:hover {
+  background-color: #88e67c9d;
+  border-style: none;
+  color: black;
+  font-weight: 800;
+}
+.name {
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 5px;
+}
+.pass {
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 5px;
+}
+.name input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.pass input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.back_button {
+  color: rgb(250, 250, 250);
+  text-decoration: none;
+  display: block;
+  width: 120px;
+  height: 40px;
+  font-size: 18px;
+  background-color: #333;
+  text-align: center;
+  border-radius: 5px;
+  font-family: "Nunito";
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.back_button:hover {
+  background-color: #5d6b5b;
+  border-style: none;
+}
+.signup_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.btn_up {
+  background-color: #333;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: block;
+  width: 120px;
+  height: 40px;
+  font-size: 18px;
+  background-color: #333;
+  text-align: center;
+  border-radius: 5px;
+  font-family: "Nunito";
+  margin-bottom: 20px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.btn_up:hover {
+  background-color: rgb(98, 241, 129);
+  color: #000;
+}

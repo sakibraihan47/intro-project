@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+
 import { FaShoppingCart } from "react-icons/fa";
 
 const Navbar = () => {
@@ -18,11 +19,13 @@ const Navbar = () => {
       <Link href="/reckless">
         <a>Products List</a>
       </Link>
-      <Link href="/signup">
-        <a>Sign Up</a>
+      <Link href="/additem">
+        <a>Post Item +</a>
       </Link>
       <div className="cart">
-        <FaShoppingCart />
+        <Link href="/cartpage">
+          <FaShoppingCart />
+        </Link>
       </div>
     </nav>
   );

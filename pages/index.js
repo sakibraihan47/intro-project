@@ -28,8 +28,8 @@ export default function Home() {
           ipsum excepturi id debitis cupiditate minima voluptates fugit cumque?
         </p>
 
-        <Link href="/reckless">
-          <a className={styles.btn}>Item List</a>
+        <Link href="/signup">
+          <a className={styles.btn}>Sign Up Here!</a>
         </Link>
       </div>
     </>
