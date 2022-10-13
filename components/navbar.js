@@ -21,7 +21,6 @@ const Navbar = () => {
       <Link href="/signup">
         <a>Sign Up</a>
       </Link>
-
       <div className="cart">
         <FaShoppingCart />
       </div>
