@@ -53,8 +53,7 @@ footer {
 .cart {
   margin-left: 20px;
   font-size: 30px;
-}
-counter {
+  cursor: pointer;
 }
 
 h2 {

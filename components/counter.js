@@ -11,7 +11,13 @@ const Counter = () => {
       </div>
       <div
         className={styles.count_btn_remove}
-        onClick={() => setCount(count - 1)}
+        onClick={() => {
+          if (count == 0) {
+            setCount(0);
+          } else {
+            setCount(count - 1);
+          }
+        }}
       >
         Remove
       </div>

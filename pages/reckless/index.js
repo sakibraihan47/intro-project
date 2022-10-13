@@ -3,11 +3,12 @@ import styles from "../../styles/Reckless.module.css";
 import Link from "next/link";
 import Head from "next/head";
 import Counter from "../../components/counter";
+import Image from "next/image";
 
 export const getStaticProps = async () => {
   //fetch request
 
-  const res = await fetch("https://jsonplaceholder.typicode.com/users/");
+  const res = await fetch("https://fakestoreapi.com/products/");
   const data = await res.json();
 
   return {
@@ -24,18 +25,19 @@ const Reckless = ({ reckless }) => {
       <div>
         <h2>Click on an Item name for description</h2>
         {reckless.map((reck) => (
-          <div>
+          <div className={styles.container}>
+            <div className={styles.prod_img}>
+              <Image src={reck.image} width={120} height={120} />
+            </div>
             <Link href={"/reckless/" + reck.id} key={reck.id}>
               <div className={styles.single}>
-                <a>
-                  <h3>{reck.name}</h3>
-                </a>
+                <div className={styles.title}>
+                  <h3>{reck.title}</h3>
+                </div>
               </div>
             </Link>
             <div className={styles.price}>
-              <a>
-                <h3>Price: {reck.id}</h3>
-              </a>
+              <h3>Price: {reck.price}</h3>
             </div>
             <Counter />
           </div>

@@ -1,5 +1,6 @@
+import Image from "next/Image";
 export const getStaticPaths = async () => {
-  const res = await fetch("https://jsonplaceholder.typicode.com/users/");
+  const res = await fetch("https://fakestoreapi.com/products/");
   const data = await res.json();
 
   const paths = data.map((reck) => {
@@ -16,7 +17,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
   const id = context.params.id;
-  const res = await fetch("https://jsonplaceholder.typicode.com/users/" + id);
+  const res = await fetch("https://fakestoreapi.com/products/" + id);
   const data = await res.json();
 
   return {
@@ -26,12 +27,18 @@ export const getStaticProps = async (context) => {
 
 const Details = ({ reck }) => {
   return (
-    <div>
-      <h1>{reck.name}</h1>
-      <p>{reck.email} </p>
-      <p>{reck.website}</p>
-      <p>{reck.address.city}</p>
-    </div>
+    <>
+      <Image src={reck.image} width={240} height={360} />
+      <div>
+        <h1>{reck.title}</h1>
+        <p>{reck.description}</p>
+        <h1>Category: {reck.category}</h1>
+        <h1>Price: {reck.price}</h1>{" "}
+        <p>
+          User Rating: {reck.rating.rate} ({reck.rating.count})
+        </p>{" "}
+      </div>
+    </>
   );
 };
 
