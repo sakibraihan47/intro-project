@@ -1,4 +1,6 @@
+import styles from "../../styles/Reckless.module.css";
 import Image from "next/Image";
+
 export const getStaticPaths = async () => {
   const res = await fetch("https://fakestoreapi.com/products/");
   const data = await res.json();
@@ -38,6 +40,7 @@ const Details = ({ reck }) => {
           User Rating: {reck.rating.rate} ({reck.rating.count})
         </p>{" "}
       </div>
+      <button className={styles.count_btn}>ADD</button>
     </>
   );
 };
